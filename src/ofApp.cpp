@@ -7,9 +7,6 @@ void ofApp::setup() {
   ofEnableAlphaBlending();
   ofBackground(255, 255, 255);
 
-  // image = ofImage img("anImage.png");
-  // slug.load("chicken.jpg");
-  // slug.load("slug.jpg");
   grabber.setup(1280, 720);
   ofBackground(0);
   slug.grabScreen(0, 0, ofGetWidth(), ofGetHeight());
@@ -22,14 +19,6 @@ void ofApp::update() { grabber.update(); }
 //--------------------------------------------------------------
 void ofApp::draw() {
 
-  // slug.grabScreen(0, 0, 500, 500);
-  // ofBackground(0);
-  // ofSetColor(255);
-  // slug.draw(0, 0);
-  // ofSetColor(slug.getColor(mouseX, mouseY));
-  // ofDrawRectangle(mouseX, mouseY, 50, 50);
-  // grabber.draw(0, 0);
-  // int res = 1 + (mouseX / 20.0);
   // slug.grabScreen(0, 0, ofGetWidth(), ofGetHeight());
 
   for (int x = 0; x < grabber.getWidth(); x += 5) {
@@ -62,41 +51,6 @@ void ofApp::draw() {
                       // ofColor(255, 255, 255));
                       mutColor);
       }
-
-      // ofSetColor(
-      // unsigned char data =
-      // grabber.getPixels().getData()[x + int(grabber.getWidth() * y)];
-      // ofSetColor(grabber.getPixels()
-      //                .getData()[0 + 3 * (x + int(grabber.getWidth() * y))],
-      //            grabber.getPixels()
-      //                .getData()[1 + 3 * (x + int(grabber.getWidth() * y))],
-      //            grabber.getPixels()
-      //                .getData()[2 + 3 * (x + int(grabber.getWidth() * y))],
-      //            80);
-      // //  [x + (y * grabber.getWidth())],
-      // //  10);
-      // ofSetColor(grabber.getPixels()
-      //                .getData()[0 + 3 * (x + int(grabber.getWidth() * y))],
-      //            0, 0, 120);
-
-      // ofDrawRectangle(x, y, 4, 12);
-      // ofSetColor(0,
-      //            grabber.getPixels()
-      //                .getData()[2 + 3 * (x + int(grabber.getWidth() * y))],
-      //            0, 120);
-
-      // ofDrawRectangle(x + 4, y, 4, 12);
-      // ofSetColor(0, 0,
-      //            grabber.getPixels()
-      //                .getData()[2 + 3 * (x + int(grabber.getWidth() * y))],
-      //            120);
-
-      // ofDrawRectangle(x + 8, y, 4, 12);
-
-      // ofDrawCircle(x + ofRandomf() * mouseY, y + ofRandomf() * mouseY, res /
-      // 2); ofDrawCircle(x + ofRandomf() * mouseY, y + ofRandomf() * mouseY,
-      // res / 2); ofDrawCircle(x + ofRandomf() * mouseY, y + ofRandomf() *
-      // mouseY, res / 2);
     }
   }
 }
